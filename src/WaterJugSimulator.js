@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { initialJugStates, breadthFirstSearch } from './utils/util';
+import {  breadthFirstSearch } from './utils/util';
 
 export class WaterJugSimulator extends Component {
   constructor(props) {
@@ -23,11 +23,11 @@ export class WaterJugSimulator extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    let capacityA = Number.parseFloat(this.state.maxJugA);
-    let capacityB = Number.parseFloat(this.state.maxJugB);
-
-    const jugs = initialJugStates();
-    let path = breadthFirstSearch(jugs, Number.parseFloat(this.state.target), capacityA, capacityB);
+    let path = breadthFirstSearch(
+      Number.parseFloat(this.state.target), 
+      Number.parseFloat(this.state.maxJugA), 
+      Number.parseFloat(this.state.maxJugB)
+    );
 
     this.setState({ path: path });
   }

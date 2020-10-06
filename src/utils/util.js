@@ -38,7 +38,6 @@ function isRepeated(path, { jugA, jugB }) {
 }
 
 export function breadthFirstSearch(
-  initialJugStates,
   target,
   capacityJugA,
   capacityJugB
@@ -46,7 +45,7 @@ export function breadthFirstSearch(
   const queue = [];
   const path = [];
 
-  path.push(initialJugStates);
+  path.push(initialJugStates());
   queue.push(path);
 
   while (queue.length) {
@@ -82,7 +81,7 @@ export function breadthFirstSearch(
   return 'No solution';
 }
 
-export function initialJugStates() {
+function initialJugStates() {
   return {
     jugA: {
       value: 0,
