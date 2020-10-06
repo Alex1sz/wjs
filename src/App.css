@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.table-wrapper {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 20px
+}
