@@ -1,7 +1,5 @@
 This is a client side implementation of the water jug problem bootstrapped with create react app.
 
-# Instructions:
-
 ## Goals
 1. Measure Z gallons of water in the most efficient way.
 2. Build a UI where a user can enter any input for X, Y, Z and see the solution.
@@ -9,9 +7,9 @@ This is a client side implementation of the water jug problem bootstrapped with 
 4. Dockerfile to make it easy to run
 
 ## LIMITATIONS
-● No partial measurement. Each jug can be empty or full.
-● Actions allowed: Fill, Empty, Transfer.
-● Ignore styling & design of UI elements
+1. No partial measurement. Each jug can be empty or full.
+2. Actions allowed: Fill, Empty, Transfer.
+3. Ignore styling & design of UI elements
 
 ## Code Notes
 
