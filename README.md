@@ -13,7 +13,7 @@ This is a client side implementation of the water jug problem bootstrapped with 
 
 ## Code Notes
 
-The code for the actions (fill, empty, transfer) can be viewed in: src/utils/util.js
+The code for the actions (fill, empty, transfer) can be viewed in: https://github.com/Alex1sz/wjs/blob/main/src/utils/util.js
 
 Breadth first search is used to determine the most efficient path. A single react component WaterJugSimulator is used to render the solution path.
 
